@@ -2,7 +2,7 @@ var TF = true;
 
 function changeImage(){
     let minhaImagem = document.querySelector('img');
-    minhaImagem.setAttribute('src','C:/users/Pedro/Desktop/Curso JavaScript/imagens1/tenor.gif');
+    minhaImagem.setAttribute('src',"imagens1/tenor.gif');
 }   
 
 function changeTitle(){
