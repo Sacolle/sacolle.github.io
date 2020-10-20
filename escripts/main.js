@@ -1,6 +1,6 @@
 function changeImage(){
     let minhaImagem = document.querySelector('img');
-    minhaImagem.setAttribute('src','imagens1/tenor.gif');
+    minhaImagem.setAttribute('src','/imagens1/tenor.gif');
 }   
 
 function changeTitle(){
