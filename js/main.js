@@ -1,5 +1,3 @@
-var TF = true;
-
 function changeImage(){
     let minhaImagem = document.querySelector('img');
     minhaImagem.setAttribute('src',"imagens1/tenor.gif');
