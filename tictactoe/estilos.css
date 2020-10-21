@@ -1,0 +1,27 @@
+html {
+    background-color: #d5dbe0;
+    font-family: "Montserrat", sans-serif;
+}
+h1{
+    font-size: 80px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+div.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    justify-content: center;
+}
+div.grid-item {
+    background-color: rgba(128, 115, 115, 0.8);
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    font-size: 150px;
+    text-align: center;
+    vertical-align: center;
+    color: #000000;
+}
+p.announcment{
+    font-size: 40px;
+    text-align: center;
+}
