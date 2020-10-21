@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html onmouseup="reset()">
     <head>
         <title> Colle's TicTacToe</title>
         <link href="estilos.css" rel="stylesheet">
@@ -21,6 +21,20 @@
             <div class="grid-item" onclick="changeCharacter(this)" name="h"></div>
             <div class="grid-item" onclick="changeCharacter(this)" name="i"></div>  
         </div>
-        <p class="announcment" id="an">resuls:</p>
+        
+        <p class="announcment" id="an">X: _ | O: _ </p>
+
+        <div id="popUp" class="modal">
+            <div class="popContent">
+              <div class="popHeader">
+                <h2>Who goes first?</h2>
+              </div>
+              <div class="popBody">
+                <p>Choose whisely</p>
+                <button class="choser" onclick="start(this)" name="X">X</button>
+                <button class="choser" onclick="start(this)" name="O">O</button>
+              </div>
+            </div>
+          </div>
     </body>
 </html>
