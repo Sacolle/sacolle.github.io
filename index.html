@@ -5,30 +5,24 @@
     <head>
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-        <title> Colle's Website</title>
-        <link href="estilo/estilo.css" rel="stylesheet">
-        <script src="/escripts/main.js"></script>
+        <title>Site do Colle</title>
+        <link href="estilo.css" rel="stylesheet">
+        <script src="main.js"></script>
     </head>
     <body>
 
-        <h1>Colle's random assortment of little things.</h1>
+        <h1>Armazem de projetos já feitos</h1>
         <br/>
-        <figure class="hum">
-            <img id="myImage" 
-                src="imagens1/9d5.png" 
-                alt="Minha imagem de teste"
-                width="400px"
-                onclick="changeImage()">
-        </figure>
-        <p class="mainParagraph">
-            <i>Violence</i><sup>TM</sup> is not cool.<br/>
-            <big><b>Pancakes</b></big> are better than <small>waffles</small>.<br/>
-            I'm out of ideas.<br/>
-            Oh, wait, just have the whole bee movie script.<br/>
-            nah, i didn't figure out how to do that <big><b>YET</b></big>.
-        </p>
-        <button class="mainButton" style="vertical-align:middle" onclick="changeTitle()"><b>Click Me!</b></button>
-        <a href="tictactoe/subindex.html">click here for a cool game</a>
+        <div class="grid-container"">
+            <div class="grid-item">Programa feito para facilmente acessar os links do Zoom em uma interface interativa e código facilmente editável.</div>
+            <div class="grid-image"><img src="imagens1/cronograms.PNG" id="cronograma" onclick="acessarSubindex(this)"></div>
+
+            <div class="grid-item">É o jogo da velha. Ele está em inglês porque eu to com preguissa de mudar.</div>
+            <div class="grid-image"><img src="imagens1/tictactoe.PNG" id="tictactoe" onclick="acessarSubindex(this)"></div>
+
+            <div class="grid-item">Espaço vazio para um futuro projeto.</div>
+            <div class="grid-image"><img src="imagens1/questionmark.png" id="questionMark" onclick="stickBug()"></div>
+        </div>
     </body>
 
 </html>
