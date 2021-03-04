@@ -1,0 +1,58 @@
+html {
+    background-color:rgb(255, 255, 255) ;
+    font-family: "Montserrat", sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+    margin-top: auto;
+}
+div.grid-container{
+    display: grid;
+    background-color: #221f1f;
+    padding: 10px;
+    grid-gap: 10px;
+
+    grid-template-columns: repeat(7,150px);
+    grid-template-rows:repeat(7,75px);
+    
+    width: fit-content;
+    align-self: center;
+    margin: auto;
+
+    
+}
+div.grid-container > div{
+    background-color: rgba(219, 201, 201, 0.8);
+    font-size: 20px;
+    text-align: center;
+
+
+}
+div.time-grid-item-row-800{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+div.time-grid-item-row-945{
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+div.time-grid-item-row-1130{
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+div.time-stamp-grid-item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+}
+div.time-stamp-grid-item3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 4;
+}
+div.time-stamp-grid-item5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 6;
+}
