@@ -3,7 +3,7 @@ function acessarSubindex(element){
     console.log(id);
     switch (id) {
         case "cronograma":
-            alert("Não");
+            window.location.href = "SiteParaOsLinkV2/subindex.html";
             break;
         case "tictactoe":
             window.location.href = "tictactoe/subindex.html";

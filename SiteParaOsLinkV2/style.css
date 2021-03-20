@@ -1,0 +1,151 @@
+:root{
+    --border: 1px;
+    --collumSize: 150px;
+    --rowSize: 75px;
+}
+
+html {
+    background-color:#ffffff ;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    margin: 0;
+}
+div.header{
+    background-color:#8d8d8d;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+div.subMenu,div.removeSubmenu{
+    background-color: #6d6d6d;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.header a{
+    float: left;
+    color: #f2f2f2;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 30px;
+}
+.header a.titulo{
+    background-color: orange;
+}
+.header a.indexes{
+    background-color: #8d8d8d;
+}
+
+.subMenu a,.centerFields input,.centerFieldsButton button{
+    float: left;
+}
+.subMenuItems{
+    padding: 30px 15px;
+    font-size: 30px;
+    color: #f2f2f2;
+}
+.centerFields{
+    padding-top: 37px;
+    padding-right: 25px;
+}
+.centerFields>input{
+    font-size: 20px;
+}
+.centerFieldsButton{
+    padding-top: 25px;
+    display: inline-block;
+    border: none;
+}
+.centerFieldsButton > button{
+    color: #f2f2f2;
+    background-color: orange;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    margin-right: 50px;
+}
+#confirmarAulas{
+    padding-top: 12px;
+    padding-bottom:12px;
+}
+.removeSubmenu{
+    padding: 10px;
+}
+.removeSubmenu div{
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #8d8d8d;
+    width: fit-content;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.removeSubmenu p{
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 125%;
+}
+
+.holder>div{
+    position: absolute;
+    background-color: rgb(197, 197, 197);
+    font-size: 125% ;
+    text-align: center;
+    width: 149px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mainGrid{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(7,var(--collumSize));
+    grid-template-rows:repeat(17,var(--rowSize));
+    width: fit-content;
+    margin: auto;
+    padding-top: var(--border);
+    padding-left: var(--border);
+    z-index: 1;
+}
+div.firstRow{
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    display: grid;
+    grid-template-columns: repeat(7,var(--collumSize));
+    grid-template-rows: repeat(1,var(--rowSize));
+
+}
+div.firstRow > div,div.firstCollum>div,div.dayElements>div{
+    background-color: rgb(197, 197, 197);
+    border-bottom: var(--border) solid black;
+    border-right: var(--border) solid black;
+    text-align: center;
+    font-size: 125%;
+    padding-top: 25px;
+}
+div.firstCollum{
+    grid-row-start: 2;
+    grid-row-end: 18;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: repeat(1,var(--collumSize));
+    grid-template-rows: repeat(6,var(--rowSize));
+}
+
+div.dayElements {
+    grid-row-start: 2;
+    grid-row-end: 18;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    display: grid;
+    grid-template-columns: repeat(6,var(--collumSize));
+    grid-template-rows: repeat(16,var(--rowSize));
+}
